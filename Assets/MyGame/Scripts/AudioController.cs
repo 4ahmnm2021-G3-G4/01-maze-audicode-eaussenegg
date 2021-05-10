@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public AudioSource robin;
     void Start()
     {
-        
+        robin = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.M))
+        {
+            robin.Pause();
+        }   
+        else if(Input.GetKey(KeyCode.P))
+        {
+            robin.UnPause();
+        }
     }
 }
