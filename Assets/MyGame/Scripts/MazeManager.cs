@@ -18,6 +18,8 @@ public class MazeManager : MonoBehaviour
     public AudioSource robinThree;
     public AudioSource robinFour;
     public AudioSource kuckuck;
+    public AudioSource MainMusic;
+    public AudioSource DungeonMusic;
 
     private GameObject CoinTwo;
     private GameObject CoinThree;
@@ -57,7 +59,6 @@ public class MazeManager : MonoBehaviour
             if (wM.coindue == true && checkCol.robinActThree == false)
             {
                 kuckuck.mute = true;
-                print("working prop");
             }
         }
         if (checkCol.robinActThree == true)
@@ -83,6 +84,7 @@ public class MazeManager : MonoBehaviour
         if(eO.leavingMaze == true)
         {
             exitSound.Stop();
+            MainMusic.Stop();
         }
 
         SearchForCoins();
