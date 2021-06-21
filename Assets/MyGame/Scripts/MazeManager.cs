@@ -40,6 +40,7 @@ public class MazeManager : MonoBehaviour
         if(wM.coinone == true)
         {
             coinOne.Stop();
+            robinOne.Stop();
             robinTwo.mute = false;
             if(wM.coinone == true && checkCol.robinActTwo == false)
             {
@@ -55,6 +56,7 @@ public class MazeManager : MonoBehaviour
         if(wM.coindue == true)
         {
             coinTwo.Stop();
+            robinTwo.Stop();
             robinThree.mute = false;
             if (wM.coindue == true && checkCol.robinActThree == false)
             {
@@ -69,6 +71,7 @@ public class MazeManager : MonoBehaviour
         if(wM.cointre == true)
         {
             coinThree.Stop();
+            robinThree.Stop();
             robinFour.mute = false;
             if(wM.coindue == true && checkCol.robinActFour == false)
             {
@@ -85,8 +88,8 @@ public class MazeManager : MonoBehaviour
         {
             exitSound.Stop();
             MainMusic.Stop();
+            DungeonMusic.mute = false;
         }
-
         SearchForCoins();
     }
 
