@@ -11,6 +11,7 @@
 /[Pa]ckages/
 /[Mm]emoryCaptures/
 
+/[Aa]ssets.meta
 /[Aa]ssets/SteamVR/
 /[Aa]ssets/SteamVR_Input/
 /[Aa]ssets/SteamVR_Resources/
@@ -31,6 +32,7 @@ Assets/StreamingAssets.meta
 
 # Visual Studio cache directory
 .vs/
+.vsconfig
 
 # Gradle cache directory
 .gradle/
