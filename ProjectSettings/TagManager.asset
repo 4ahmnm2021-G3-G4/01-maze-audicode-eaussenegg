@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Gate0
+  - Coin1
+  - Coin2
+  - Coin3
+  - Shovel
+  - Robin-01
+  - Robin-02
+  - Robin-03
+  - Coin2Sound
+  - Coin3Sound
+  - Emblem
+  - Robin4
   layers:
   - Default
   - TransparentFX
